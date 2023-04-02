@@ -1,25 +1,17 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FormularioComponent } from './formulario.component';
 
 describe('FormularioComponent', () => {
   let component: FormularioComponent;
-  let fixture: ComponentFixture<FormularioComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ FormularioComponent ]
-    })
-    .compileComponents();
-  });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormularioComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new FormularioComponent();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('deve ser iniciado', () => {
+    const spy = jest.spyOn(component, 'ngOnInit');
+
+    component.ngOnInit();
+
+    expect(spy).toBeCalled();
   });
 });

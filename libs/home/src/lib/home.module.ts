@@ -12,5 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     FormularioComponent
   ],
+  exports:[
+    FormularioComponent
+  ]
 })
 export class HomeModule {}
