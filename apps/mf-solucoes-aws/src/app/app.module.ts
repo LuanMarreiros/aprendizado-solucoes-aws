@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HomeModule } from '../../../../libs/home/src/lib/home.module';
 
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, HomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

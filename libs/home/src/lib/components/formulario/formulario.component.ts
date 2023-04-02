@@ -1,0 +1,12 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'mf-solucoes-aws-formulario',
+  templateUrl: './formulario.component.html',
+  styleUrls: ['./formulario.component.scss'],
+})
+export class FormularioComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}
