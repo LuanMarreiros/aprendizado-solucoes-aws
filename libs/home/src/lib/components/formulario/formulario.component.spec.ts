@@ -7,7 +7,7 @@ describe('FormularioComponent', () => {
 
   beforeEach(() => {
     component = new FormularioComponent();
-  })
+  });
 
   it('deve ser iniciado', () => {
     const spy = jest.spyOn(component, 'ngOnInit');
@@ -15,5 +15,5 @@ describe('FormularioComponent', () => {
     component.ngOnInit();
 
     expect(spy).toBeCalled();
-  })
+  });
 });

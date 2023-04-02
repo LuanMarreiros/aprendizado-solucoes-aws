@@ -9,6 +9,6 @@ phases:
 # Include only the files required for your application to run.
 artifacts:
   files:
-    - '**/*'  
+    - '**/*'
   base-directory: 'dist*'
   discard-paths: yes

@@ -5,7 +5,7 @@ describe('AppComponent', () => {
 
   beforeEach(() => {
     component = new AppComponent();
-  })
+  });
 
   it('deve ser iniciado', () => {
     const spy = jest.spyOn(component, 'ngOnInit');
@@ -13,5 +13,5 @@ describe('AppComponent', () => {
     component.ngOnInit();
 
     expect(spy).toBeCalled();
-  })
+  });
 });

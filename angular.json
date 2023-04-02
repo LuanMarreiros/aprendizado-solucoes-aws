@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 0,
   "projects": {
     "home": "libs/home",
     "mf-solucoes-aws": "apps/mf-solucoes-aws",

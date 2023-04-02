@@ -4,12 +4,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   declarations: [FormularioComponent],
-  exports: [FormularioComponent]
+  exports: [FormularioComponent],
 })
 export class HomeModule {}

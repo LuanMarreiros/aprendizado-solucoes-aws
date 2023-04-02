@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms'
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'mf-solucoes-aws-formulario',
@@ -7,7 +7,6 @@ import { FormGroup, FormControl, Validators } from '@angular/forms'
   styleUrls: ['./formulario.component.scss'],
 })
 export class FormularioComponent implements OnInit {
-  
   form: FormGroup;
 
   constructor() {
@@ -16,16 +15,14 @@ export class FormularioComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  setForm(){
-    return this.form = new FormGroup({
+  setForm() {
+    return (this.form = new FormGroup({
       nome: new FormControl(null, Validators.required),
       sobrenome: new FormControl(null, Validators.required),
       telefone: new FormControl(null, Validators.required),
       email: new FormControl(null, [Validators.required, Validators.email]),
-    });
+    }));
   }
 
-  onSubmit(){
-
-  }
+  onSubmit() {}
 }
