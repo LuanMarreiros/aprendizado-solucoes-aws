@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "home": "libs/home",
     "mf-solucoes-aws": "apps/mf-solucoes-aws",
     "mf-solucoes-aws-e2e": "apps/mf-solucoes-aws-e2e"
   }
